@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <script src="libs/jquery/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  
+
+<link rel="stylesheet" href="libs/font-awesome/css/all.min.css">
+
+<!-- CSS -->
+
+<link rel="stylesheet" type="text/css" href="doc-style.css"/>
+
+
+<script src="libs/font-awesome/js/all.min.js"></script>
+  
+
+
+
+  <!-- Prism CSS -->
+  <link rel="stylesheet" type="text/css" href="libs/prism/prism.css"/>
+
+ 
+
+
+ </head>
+
+<body>
+
+
+<div class="container-fluid">
+  <div class="row">
+    
+    <div class="col p0">
+      <nav id="sidebar">
+        <ul class="nav flex-column">
+         <header><a class="navbar-brand main_logo" href="../index.html">
+         <svg baseProfile="tiny" fill="#2fcb72" height="32px" version="1.1" viewBox="0 5 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="
+          "><g id="Guides__x26__Forms"></g><g id="Icons"><g><path d="M15.996,5L6,14v13h7.996v-6H18v6h8V14L15.996,5z M24.004,25h-4.008v-6H12v6H7.996V14.828l8-7l8.008,7V25z"></path></g></g></svg>Propertier
+          </a></header>
+          <li class="nav-item">
+            <a class="nav-link introduction" href="#Introduction">Introduction</a>
+
+          </li>
+          <li class="nav-item">
+           <a class="nav-link layout" href="#structure">File Structure</a>
+          </li>
+
+          <li class="nav-item">
+           <a class="nav-link layout" href="#changelog">Change log</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link content" href="#javascript">How To's <i class="fa fa-angle-right c_icon"></i></a>
+            <ul class="inner-menu">
+            <li><a class="nav-inner-link" href="#stemplate">Starter Template</a></li>
+            <li><a class="nav-inner-link" href="#pageload">Page Load Animations</a></li>
+            <li><a class="nav-inner-link" href="#backtotop">Back To Top Button</a></li>
+          
+          </ul>
+          </li>
+
+           <li class="nav-item">
+            <a class="nav-link content" href="#javascript">CSS<i class="fa fa-angle-right c_icon"></i></a>
+            <ul class="inner-menu">
+            <li><a class="nav-inner-link" href="#general">General</a></li>
+            <li><a class="nav-inner-link" href="#backgrounds">Backgrounds</a></li>
+            <li><a class="nav-inner-link" href="#navbars">Navbars</a></li>
+          </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link content" href="#javascript">Javascript <i class="fa fa-angle-right c_icon"></i></a>
+            <ul class="inner-menu">
+            <li><a class="nav-inner-link" href="#sliders">Sliders</a></li>
+            <li><a class="nav-inner-link" href="#progress">Progress Bars</a></li>
+            <li><a class="nav-inner-link" href="#counters">Counters</a></li>
+            <li><a class="nav-inner-link" href="#googlemaps">Google Maps</a></li>
+          </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link content" href="#Components">Bootstrap <i class="fa fa-angle-right c_icon"></i></a>
+            <ul class="inner-menu">
+              <li>
+                  <a href="http://getbootstrap.com/docs/4.4/components/alerts/" class="nav-inner-link" target="_blank">Alerts </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/components/badge/" class="nav-inner-link" target="_blank">Badges </a>
+
+                </li>
+
+                  <a href="http://getbootstrap.com/docs/4.4/components/breadcrumb/" class="nav-inner-link" target="_blank">Breadcrumbs </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/components/buttons/" class="nav-inner-link" target="_blank">Buttons </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/components/card/" class="nav-inner-link" target="_blank">Cards </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/components/dropdowns/" class="nav-inner-link" target="_blank">Dropdowns </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/components/forms/" class="nav-inner-link" target="_blank">Forms </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/layout/grid/" class="nav-inner-link" target="_blank">Grid System </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/components/modal/" class="nav-inner-link" target="_blank">Modals </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/components/navbar/" class="nav-inner-link" target="_blank">Navbars </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/components/navs/" class="nav-inner-link" target="_blank">Navs </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/components/popovers/" class="nav-inner-link" target="_blank">Popovers </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/components/progress/" class="nav-inner-link" target="_blank">Progress </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/content/tables/" class="nav-inner-link" target="_blank">Tables </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/components/toasts/" class="nav-inner-link" target="_blank">Toasts </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/components/tooltips/" class="nav-inner-link" target="_blank">Tooltips </a>
+
+                </li>
+
+                <li>
+                  <a href="http://getbootstrap.com/docs/4.4/content/typography/" class="nav-inner-link" target="_blank">Typography </a>
+
+                </li>
+            </ul>
+          </li>
+        
+      </ul>
+   </nav>
+  </div>
+      
+<div class="col-md-9">
+  <main id="main-doc">    
+   
+    
+      <section class="main-section" id="Introduction">
+        <header><h3>Introduction</h3></header>
+          <article>
+            <p>An introductory guide to get started with Propertier Landing Page Template.</p>
+            
+       </article>
+
+ <section class="main-section" id="changelog">
+    <header><h3>Changelog</h3></header>
+          <article>
+            <h4>Initial Release v1.0.0</h4>
+            <p>Initial Release of the template.</p>
+            
+       </article>  
+
+
+        <article>
+             <header><h3>Getting Started</h3></header>
+      <h4>Setting Up The Dev Tools</h4>
+      <p>To get started with Propertier Landing Page Template as a starter template you need to intialize the basic bootstrap and js files and main stylesheet of the theme.</p>
+
+    
+ <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>     
+  <pre>
+    <code class="language-html code">
+&lt;link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"&gt;
+&lt;script src="libs/jquery/jquery.min.js">&lt;/script&gt;
+&lt;script src="assets/bootstrap/js/bootstrap.min.js">&lt;/script&gt;
+&lt;!-- CSS --&gt;
+&lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;
+    </code>
+  </pre>
+</div>
+ 
+        <p>Use <code class="highlight-rouge">.container-fluid</code> for a full width container, spanning the entire width of the viewport.</p> 
+    
+
+
+<div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+  <pre>
+    <code class="language-html code">
+&lt;div class="container-fluid">...&lt;/div&gt;</code>
+  </pre>
+    </div>
+
+
+    <h4>Animation On Scroll(AOS)</h4>
+        <p>To initialize AOS library you need a stylesheet at the head section and two scripts at the bottom of the page first is the main js file of AOS and second is the initialization file of AOS which you must require inorder to intialize the library </p>
+
+
+    
+     <h6>AOS Stylesheet</h6>
+     <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+     <pre>
+    <code class="language-html code">
+&lt;link href="libs/aos/aos-master/dist/aos.css" rel="stylesheet"&gt;
+    </code>
+  </pre>
+</div>
+     
+     <h6>AOS Scripts</h6>
+     <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+     <pre>
+    <code class="language-html code">
+&lt;script src="libs/aos/aos-master/dist/aos.js"&gt;&lt;/script&gt;
+&lt;script src="libs/aos/aos-init.js">&lt;/script&gt;
+    </code>
+  </pre>
+</div>
+</article>
+  <!-- Slider Section Starts -->
+
+
+
+<header><h3>Slick Slider</h3></header>
+       
+       <article>
+         <p>To initialize Slick Slider you need to add these scripts and stylesheets at the  <code class="highlight-rouge">head</code> section.</p>
+         
+         <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+        <pre>
+    <code class="language-html code">
+&lt;link rel="stylesheet" type="text/css" href="assets/slick-slider/slick/slick.css"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="assets/slick-slider/slick/slick-theme.css"/&gt;
+&lt;script type="text/javascript" src="assets/slick-slider/slick/slick.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- Init Slick Slider --&gt;
+&lt;script type="text/javascript" src="assets/slick-slider/slick-init.js"&gt;&lt;/script&gt;
+    </code>
+  </pre>
+</div>
+     
+         <p>You must add  <code class="highlight-rouge">slick-init.js</code> to initialize the slider.</p>
+
+
+</article>
+
+  <!-- Slider Section Ends -->
+
+  <!-- Font Awesome Section Starts -->
+
+
+<article>
+  <header><h3>Font Awesome</h3></header>
+            <p>To initialize Font Awesome you need to add these scripts and stylesheets at the <code class="highlight-rouge">head</code> section.</p>
+
+            <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+            <pre>
+    <code class="language-html code">
+
+&lt;link rel="stylesheet" href="libs/font-awesome/css/all.min.css"&gt;
+&lt;script src="libs/font-awesome/js/all.min.js"&gt;&lt;/script&gt;
+    </code>
+  </pre>
+     </div>       
+    
+
+  <!-- Font Awesome Sections Ends -->
+
+
+
+     </section>
+
+
+
+
+
+
+  
+  <section class="main-section" id="structure">
+    <header><h3>Assets</h3></header>
+          <article>
+            <p>Assets folder contains all of the assets referened in htm pages.</p>
+            <p class="ppd">images folder contains folder names of images as <code class="highlight-rouge">portfolios</code>, <code class="highlight-rouge">team</code> etc.
+            in which respective images are placed.</p>
+            <p>Bootstrap <code class="highlight-rouge">css</code> and <code class="highlight-rouge">js</code> files are included in bootstrap folder, bootstrap <code class="highlight-rouge">scss</code> files are also included in bootstrap folder with predefined variables.</p>
+            
+       </article>  
+
+
+       <header><h3>Libs</h3></header>
+          <article>
+            <p>The <code class="highlight-rouge">libs</code> folder include libraries like aos,font-awesome,jquery and zoom-master.</p>
+            
+       </article>
+
+
+       <header><h3>CSS</h3></header>
+          <article>
+            <p>The main stylesheet of the theme is included in the main folder of Propertier Landing Page Template along with html pages while external stylesheets are present inside <code class="highlight-rouge">css</code> folder.</p>
+
+            <p>Other stylesheets of frameworks and libraries that are included in <code class="highlight-rouge">assets</code> and <code class="highlight-rouge">libs</code> folder respectively.</p>
+            
+       </article>
+
+
+       <header><h3>JS</h3></header>
+          <article>
+            <p>JS files used in theme are included in <code class="highlight-rouge">js</code> folder where mostly initialization scripts are placed for different functionality of the theme.</p>
+            
+       </article>
+  </section>
+
+
+
+
+       <header><h3>Libs</h3></header>
+          <article>
+            <p>The <code class="highlight-rouge">libs</code> folder include libraries like aos,font-awesome,jquery and zoom-master.</p>
+            
+       </article>
+
+  </section>
+
+<section class="main-section" id="stemplate">
+       
+       <h3>Starter Template</h3>
+          <article>
+
+            <p>Propertier Landing Page Template includes a starter template which will help you to get a quick start</p>
+            
+            <h4>Getting Started</h4>
+            <p>Below is the code for a very basic starter template that includes all the important tools to get started with a basic template.</p>
+
+            <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+            <pre>
+    <code class="language-html code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"&gt;
+  &lt;script src="libs/jquery/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="assets/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+  
+
+&lt;link rel="stylesheet" href="libs/font-awesome/css/all.min.css"&gt;
+
+&lt;!-- CSS --&gt;
+
+&lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;
+
+
+&lt;script src="libs/font-awesome/js/all.min.js"&gt;&lt;/script&gt;
+  
+  &lt;!-- Slick Slider --&gt;
+
+  &lt;link rel="stylesheet" type="text/css" href="assets/slick-slider/slick/slick.css"/&gt;
+  &lt;link rel="stylesheet" type="text/css" href="assets/slick-slider/slick/slick-theme.css"/&gt;
+  &lt;script type="text/javascript" src="assets/slick-slider/slick/slick.min.js"&gt;&lt;/script&gt;
+
+  &lt;!-- Init Slick Slider --&gt;
+  &lt;script type="text/javascript" src="assets/slick-slider/slick-init.js"&gt;&lt;/script&gt;
+
+
+  &lt;!-- Animate On Scroll  --&gt;
+
+&lt;link href="libs/aos/aos-master/dist/aos.css" rel="stylesheet"&gt;
+
+
+  &lt;title&gt;Page Title&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;script src="js/main.js"&gt;&lt;/script&gt;
+&lt;body&gt;
+&lt;div class="loader"&gt;
+&lt;div id="pulse-loader"&gt;
+  &lt;div class="pulse-loader-1"&gt;&lt;/div&gt;
+  &lt;div class="pulse-loader-2"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;script src="libs/aos/aos-master/dist/aos.js"&gt;&lt;/script&gt;
+&lt;script src="libs/aos/aos-init.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code>
+  </pre>
+     </div>   
+
+
+     <h4>Starter Template With Navbar And Footer</h4>
+
+     <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+            <pre>
+    <code class="language-html code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"&gt;
+  &lt;script src="libs/jquery/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="assets/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+  
+
+&lt;link rel="stylesheet" href="libs/font-awesome/css/all.min.css"&gt;
+
+&lt;!-- CSS --&gt;
+
+&lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;
+
+
+&lt;script src="libs/font-awesome/js/all.min.js"&gt;&lt;/script&gt;
+  
+  &lt;!-- Slick Slider --&gt;
+
+
+  &lt;link rel="stylesheet" type="text/css" href="assets/slick-slider/slick/slick.css"/&gt;
+  &lt;link rel="stylesheet" type="text/css" href="assets/slick-slider/slick/slick-theme.css"/&gt;
+  &lt;script type="text/javascript" src="assets/slick-slider/slick/slick.min.js"&gt;&lt;/script&gt;
+
+  &lt;!-- Init Slick Slider --&gt;
+  &lt;script type="text/javascript" src="assets/slick-slider/slick-init.js"&gt;&lt;/script&gt;
+
+
+  &lt;!-- Animate On Scroll  --&gt;
+
+
+
+&lt;link href="libs/aos/aos-master/dist/aos.css" rel="stylesheet"&gt;
+
+
+
+  &lt;title&gt;Page Title&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;script src="js/main.js"&gt;&lt;/script&gt;
+&lt;body&gt;
+&lt;div class="loader"&gt;
+&lt;div id="pulse-loader"&gt;
+  &lt;div class="pulse-loader-1"&gt;&lt;/div&gt;
+  &lt;div class="pulse-loader-2"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class="header-nav"&gt;
+  &lt;div class="row header-inner"&gt;
+    &lt;div class="col-6"&gt;
+      &lt;span class="hs cw plr"&gt;&lt;i class="cgg cw fa fa-clock"&gt;&lt;/i&gt; Mon-Friday 9am - 5pm&lt;/span&gt;
+      &lt;span class="hs cw plr"&gt;&lt;i class="cgg cw fa fa-phone"&gt;&lt;/i&gt; 123-123-123&lt;/span&gt;
+      &lt;span class="hs cw plr"&gt;&lt;i class="cgg cw fa fa-envelope"&gt;&lt;/i&gt; email@domain.com&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="col-6"&gt;
+      &lt;div class="social-inner text-right"&gt;
+        Visit Our Social Icons
+        &lt;i class="cw fab fa-facebook fa-lg psi"&gt;&lt;/i&gt;
+        &lt;i class="cw fab fa-instagram fa-lg psi"&gt;&lt;/i&gt;
+        &lt;i class="cw fab fa-youtube fa-lg psi"&gt;&lt;/i&gt;
+        &lt;i class="cw fab fa-linkedin fa-lg psi"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;nav class="navbar navbar-expand-lg navbar-light cs-nav" id="navbar"&gt;
+  &lt;a class="navbar-brand" href="#"&gt;&lt;img src="assets/images/logos/logo.png" alt="Site Logo" class="site_logo"&gt;&lt;/a&gt;
+  &lt;button class="navbar-toggler navbar-toggle x collapsed" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"&gt;
+    &lt;!-- &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt; --&gt;
+    
+    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;div class="navbar-collapse collapse" id="navbarText" style=""&gt;
+    &lt;ul class="navbar-nav ml-auto"&gt;
+      &lt;li class="nav-item active"&gt;
+        &lt;a class="nav-link" href="#"&gt;HOME &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;
+
+
+          &lt;ul class="nav-dropdown"&gt;
+              &lt;li&gt;&lt;a href="index.html"&gt;Home 1&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="index-2.html"&gt;Home 2&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="index-3.html"&gt;Home 3&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="index-4.html"&gt;Home 4&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="index-5.html"&gt;Home 5&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="index-6.html"&gt;Home 6&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;PAGES&lt;/a&gt;
+        &lt;ul class="nav-dropdown"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About Us &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+
+            &lt;ul class="nav-dropdown-sub"&gt;
+              &lt;li&gt;&lt;a href="about-us-1.html"&gt;About Us 1&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="about-us-2.html"&gt;About Us 2&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="about-us-3.html"&gt;About Us 3&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+
+            &lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Team &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+            &lt;ul class="nav-dropdown-sub"&gt;
+              &lt;li&gt;&lt;a href="team.html"&gt;Team 1&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="team-2.html"&gt;Team 2&lt;/a&gt;&lt;/li&gt;
+      
+            &lt;/ul&gt;
+
+          &lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="testimonials.html"&gt;Testimonials &lt;!-- &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt; --&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Contact Us &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+            &lt;ul class="nav-dropdown-sub"&gt;
+              &lt;li&gt;&lt;a href="contact-us.html"&gt;Contact Us 1&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="contact-us-2.html"&gt;Contact Us 2&lt;/a&gt;&lt;/li&gt;
+      
+            &lt;/ul&gt;
+
+          &lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="under-construction.html"&gt;Under Construction &lt;!-- &lt;i class="fa fa-angle-right"&gt; --&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="error-404.html"&gt;Error Page &lt;!-- &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt; --&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="comming-soon.html"&gt;Coming Soon &lt;!-- &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt; --&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      
+       &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;PORTFOLIO&lt;/a&gt;
+
+       
+
+        &lt;ul class="nav-dropdown"&gt;
+
+
+            &lt;li&gt;&lt;a href="#"&gt;Grid Layout &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+           &lt;ul class="nav-dropdown-sub"&gt;
+              &lt;li&gt;&lt;a href="portfolio-grid-1.html"&gt;1 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="portfolio-grid-2.html"&gt;2 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="portfolio-grid-3.html"&gt;3 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="portfolio-grid-1.html"&gt;4 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="portfolio-grid-2.html"&gt;5 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="portfolio-grid-3.html"&gt;6 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="portfolio-no-margins.html"&gt;No Margins&lt;/a&gt;&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+            &lt;/a&gt;&lt;/li&gt;
+    
+
+            &lt;li&gt;&lt;a href="#"&gt;Mansory Layout &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+           &lt;ul class="nav-dropdown-sub"&gt;
+              &lt;li&gt;&lt;a href="mansory-grid-2.html"&gt;2 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="mansory-grid-3.html"&gt;3 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="mansory-grid-1.html"&gt;4 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="mansory-grid-2.html"&gt;5 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="mansory-grid-3.html"&gt;6 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="mansory-grid-no-margins.html"&gt;No Margins&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;/a&gt;&lt;/li&gt;
+
+               &lt;li&gt;&lt;a href="#"&gt;Single Layout &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+           &lt;ul class="nav-dropdown-sub"&gt;
+              &lt;li&gt;&lt;a href="porfolio-single-wide.html"&gt;Wide Slider&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="portfolio-single.html"&gt;Small Slider&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="portfolio-single-full.html"&gt;Full Width Slider&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="portfolio-single-right-sidebar.html"&gt;Slider Right Sidebar&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="portfolio-single-left-sidebar.html"&gt;Slider Left Sidebar&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;/a&gt;&lt;/li&gt;
+        
+        &lt;/ul&gt;
+
+      &lt;/li&gt;
+
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;BLOG&lt;/a&gt;
+
+
+        &lt;ul class="nav-dropdown"&gt;
+
+
+       &lt;li&gt;&lt;a href="#"&gt;Grid Layout &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+           &lt;ul class="nav-dropdown-sub"&gt;
+              &lt;li&gt;&lt;a href="blog-grid-2-detailed.html"&gt;2 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="blog-grid-3-detailed.html"&gt;3 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="blog-grid-4-detailed.html"&gt;4 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="blog-grid-right-sidebar.html"&gt;Right Sidebar&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="blog-grid-left-sidebar.html"&gt;Left Sidebar&lt;/a&gt;&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+            &lt;/a&gt;&lt;/li&gt;
+
+            &lt;li&gt;&lt;a href="#"&gt;Single Post Types &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+           &lt;ul class="nav-dropdown-sub"&gt;
+              &lt;li&gt;&lt;a href="blog-single-full.html"&gt;Standard Post&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="blog-single-full-aside.html"&gt;Aside Post&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="blog-single-full-gallery.html"&gt;Gallery Post&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="blog-single-full-video.html"&gt;Video Post&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="blog-single-full-audio.html"&gt;Audio Post&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="blog-single-full-link.html"&gt;Link Post&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;/a&gt;&lt;/li&gt;
+
+            &lt;li&gt;&lt;a href="#"&gt;Single Post Layout &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+           &lt;ul class="nav-dropdown-sub"&gt;
+              &lt;li&gt;&lt;a href="blog-full-width.html"&gt;Full Width&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="blog-right-sidebar.html"&gt;Right Sidebar&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="blog-left-sidebar.html"&gt;Left Sidebar&lt;/a&gt;&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+            &lt;/a&gt;&lt;/li&gt;
+
+          &lt;/ul&gt;
+
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;ELEMENTS&lt;/a&gt;
+
+        &lt;div class="row nav-dropdown abs-c"&gt;
+
+          &lt;div class="col-md-6"&gt;
+            &lt;ul class="mega-custom"&gt;
+
+              &lt;h6 class="text-center ppd"&gt;Elements Basic&lt;/h6&gt;
+              &lt;li&gt;&lt;a href="elements-buttons.html"&gt;Buttons&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="elements-ctas.html"&gt;CTA's&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="elements-lists.html"&gt;Lists&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="elements-blockquotes.html"&gt;Block Quotes&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="elements-fonts.html"&gt;Fonts&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          
+           &lt;div class="col-md-6"&gt;
+            &lt;ul class="mega-custom"&gt;
+              &lt;h6 class="text-center ppd"&gt;Elements Advanced&lt;/h6&gt;
+              &lt;li&gt;&lt;a href="elements-accordions.html"&gt;Accordions&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="elements-pricing-tables.html"&gt;Pricing Tables&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="elements-testimonials.html"&gt;Testimonials&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="elements-progress.html"&gt;Progress Bars&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="elements-counters.html"&gt;Counters&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;SHOP&lt;/a&gt;
+
+
+        &lt;ul class="nav-dropdown"&gt;
+
+
+       &lt;li&gt;&lt;a href="#"&gt;Single Product &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+           &lt;ul class="nav-dropdown-sub"&gt;
+              &lt;li&gt;&lt;a href="shop-single.html"&gt;Full Width&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-single-slider.html"&gt;Full Width Slider&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-single-right-sidebar.html"&gt;Slider Right Sidebar&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-single-slider-left-sidebar.html"&gt;Slider Left Sidebar&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-single-thumbnails.html"&gt;Full Width Thumbnails&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-single-thumbnails-right-sidebar.html"&gt;Thumbnails Right Sidebar&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-single-thumbnails-left-sidebar.html"&gt;Thumbnails Left Sidebar&lt;/a&gt;&lt;/li&gt;
+
+            &lt;/ul&gt;
+
+            &lt;/a&gt;&lt;/li&gt;
+
+            &lt;li&gt;&lt;a href="#"&gt;1 Column &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+           &lt;ul class="nav-dropdown-sub"&gt;
+            &lt;li&gt;&lt;a href="shop-grid-1.html"&gt;1 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-grid-1-right-sidebar.html"&gt;1 Column Right Sidebar&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-grid-1-left-sidebar.html"&gt;1 Column Left Sidebar&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;/a&gt;&lt;/li&gt;
+
+            &lt;li&gt;&lt;a href="#"&gt;2 Column &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+           &lt;ul class="nav-dropdown-sub"&gt;
+    
+              &lt;li&gt;&lt;a href="shop-grid-2.html"&gt;2 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-grid-2-right-sidebar.html"&gt;2 Column Right Sidebar&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-grid-1-left-sidebar.html"&gt;2 Column Left Sidebar&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;/a&gt;&lt;/li&gt;
+
+            &lt;li&gt;&lt;a href="#"&gt;3 Column&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+           &lt;ul class="nav-dropdown-sub"&gt;
+              &lt;li&gt;&lt;a href="shop-grid-3.html"&gt;3 Column&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-grid-3-right-sidebar.html"&gt;3 Column Right Sidebar&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-grid-1-left-sidebar.html"&gt;3 Column Left Sidebar&lt;/a&gt;&lt;/li&gt;
+  
+            &lt;/ul&gt;
+
+            &lt;/a&gt;&lt;/li&gt;
+
+            &lt;li&gt;&lt;a href="shop-grid-4"&gt;4 Column&lt;/a&gt;&lt;/li&gt;
+
+             &lt;li&gt;&lt;a href="#"&gt;Shop Pages &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+
+           &lt;ul class="nav-dropdown-sub"&gt;
+              &lt;li&gt;&lt;a href="shop-cart.html"&gt;Cart&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-checkout.html"&gt;Checkout&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="shop-my-account.html"&gt;My Account&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;/a&gt;&lt;/li&gt;
+
+          &lt;/ul&gt;
+
+
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;form class="form-inline my-2 my-lg-0"&gt;
+      &lt;div class="search_toggle"&gt;&lt;input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"&gt;&lt;button class="btn btn-outline-success my-2 my-sm-0 cs_srch" type="submit"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;
+      &lt;button class="btn btn-outline-success my-2 my-sm-0 cs_srch s_toggle" type="submit"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;div class="cart-nav"&gt;
+
+
+       &lt;div class="cart-info text-center"&gt;
+          &lt;table class="table table-condensed cart-table"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Product&lt;/th&gt;
+        &lt;th&gt;Price&lt;/th&gt;    
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;a href="#"&gt;&lt;i class="fa fa-times cgg fa-lg"&gt;&lt;/i&gt;
+         &lt;img alt="Cart Image" class="cart-img" src="assets/images/shop/bag.jpg"&gt; Bag&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;$79&lt;/td&gt;&gt;    
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+        &lt;div class="cart_btn_div"&gt;&lt;a href="shop-cart.html" class="cart_btn"&gt;View Cart&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+
+
+      &lt;div class="cart_sp"&gt;&lt;span class="sp_content"&gt;1&lt;/span&gt;&lt;/div&gt;&lt;i class="fa fa-shopping-cart fa-lg cgg"&gt;&lt;/i&gt;&lt;/div&gt;
+    &lt;div class="get-quote"&gt;
+      &lt;a href="#"&gt;Request A Quote&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;div class="container"&gt;
+  
+&lt;/div&gt;
+
+
+&lt;!-- Background Container Ends --&gt;
+
+&lt;!-- Btm Container starts --&gt;
+&lt;div class="btm_container"&gt;
+&lt;div class="container"&gt;
+
+&lt;div class="row"&gt;
+  
+
+&lt;div class="col-md-3 cbtm_col"&gt;
+  &lt;h6&gt; Demo Location&lt;/h6&gt;
+  &lt;p&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt; email@domain.com&lt;/p&gt;
+  &lt;p&gt;&lt;i class="fa fa-phone"&gt;&lt;/i&gt; 111-111-111&lt;/p&gt;
+  &lt;p&gt;&lt;i class="fa fa-globe"&gt;&lt;/i&gt; yourwebsite-dot-com&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="col-md-3 cbtm_col"&gt;
+  &lt;h6&gt;Menu&lt;/h6&gt;
+  &lt;p&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a href="#"&gt;Contact Us&lt;/a&gt;&lt;/p&gt;
+  
+&lt;/div&gt;
+
+
+&lt;div class="col-md-3 cbtm_col"&gt;
+  &lt;h6&gt;Social Links&lt;/h6&gt;
+  &lt;p&gt;&lt;a href="#"&gt;&lt;i class="fab fa-facebook fa-2x"&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;a href="#"&gt;&lt;i class="fab fa-instagram fa-2x"&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;a href="#"&gt;&lt;i class="fab fa-youtube fa-2x"&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;a href="#"&gt;&lt;i class="fab fa-linkedin fa-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+  
+&lt;/div&gt;
+
+&lt;div class="col-md-3 cbtm_col"&gt;
+  &lt;h6&gt;Demo Address&lt;/h6&gt;
+
+
+  &lt;p&gt;knowledgeaware.tk&lt;/p&gt;
+  &lt;p&gt;Demo Floor Address 123&lt;/p&gt;
+  &lt;p&gt;Karachi, Pakistan&lt;/p&gt;
+    
+&lt;/div&gt;
+
+
+&lt;div class="text-center cright"&gt;&lt;p&gt;&copy;Copyrights All Rights Reserved&lt;/p&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Btm container ends --&gt;
+
+&lt;script src="libs/aos/aos-master/dist/aos.js"&gt;&lt;/script&gt;
+&lt;script src="libs/aos/aos-init.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code>
+  </pre>
+     </div> 
+
+          </article>
+    </section>
+
+    <section class="main-section" id="pageload">
+      <h3>Pageload Animations</h3>
+       
+          <article>
+            <p>Propertier Landing Page Template includes 3 pageload animations which will run until page is loaded.</p>
+
+
+          <div class="alert alert-info">
+  <strong>Note!</strong> As default pageloader <code class="highlight-rouge">GIF</code> animation is included at the top of all html pages right after <code class="highlight-rouge">body</code> tag which is more compatible for browsers.
+</div>
+
+
+
+         <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           
+           <code class="language-html code">
+&lt;div class="loader"&gt;
+&lt;div id="pulse-loader"&gt;
+  &lt;div class="pulse-loader-1"&gt;&lt;/div&gt;
+  &lt;div class="pulse-loader-2"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+          </code>
+         </pre>
+       </div>
+
+
+       <p>To use <code class="highlight-rouge">CSS</code> animations you can use these three loaders at the top of the page after <code class="highlight-rouge">body</code> tag.</p>
+
+
+        <div class="alert alert-info">
+  <strong>Note!</strong> For the animations below you need to include the html after the <code class="highlight-rouge">body</code> tag and <code class="highlight-rouge">css</code> after the main stylesheet of the template inorder to get it work.
+</div>
+ 
+
+        <h5>Block Animation</h5>
+
+       <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           
+           <code class="language-html code">
+&lt;div class="loader loadingio-spinner-blocks-7gdh1h44sa"&gt;&lt;div class="ldio-0a6y8bae0ii"&gt;
+&lt;div style='left:38px;top:38px;animation-delay:0s'&gt;&lt;/div&gt;&lt;div style='left:80px;top:38px;animation-delay:0.125s'&gt;&lt;/div&gt;&lt;div style='left:122px;top:38px;animation-delay:0.25s'&gt;&lt;/div&gt;&lt;div style='left:38px;top:80px;animation-delay:0.875s'&gt;&lt;/div&gt;&lt;div style='left:122px;top:80px;animation-delay:0.375s'&gt;&lt;/div&gt;&lt;div style='left:38px;top:122px;animation-delay:0.75s'&gt;&lt;/div&gt;&lt;div style='left:80px;top:122px;animation-delay:0.625s'&gt;&lt;/div&gt;&lt;div style='left:122px;top:122px;animation-delay:0.5s'&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+          </code>
+         </pre>
+       </div>
+
+       <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           
+           <code class="language-html code">
+&lt;!-- Block Icon CSS --&gt;
+&lt;link rel="stylesheet" type="text/css" href="assets/icons/block-icon.css"/&gt;
+          </code>
+         </pre>
+       </div>
+
+       <h5>Spinner Animation </h5>
+
+       <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           
+           <code class="language-html code">
+&lt;div class="loader loadingio-spinner-spinner-wofbxj1fcua"&gt;&lt;div class="ldio-qts9jy12bkq"&gt;
+&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+          </code>
+         </pre>
+       </div>
+
+      <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           
+           <code class="language-html code">
+&lt;!-- Spinner Icon CSS --&gt;
+&lt;link rel="stylesheet" type="text/css" href="assets/icons/spinner-icon.css"/&gt;
+          </code>
+         </pre>
+       </div>
+
+
+       <h5>Spinner Animation 2 </h5>
+
+       <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           
+           <code class="language-html code">
+&lt;div class="loader loadingio-spinner-ripple-qvlnknvvpms"&gt;&lt;div class="ldio-webjfmldk29"&gt;
+&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+          </code>
+         </pre>
+       </div>
+       <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           
+           <code class="language-html code">
+&lt;!-- Spinner Icon 2 CSS --&gt;
+&lt;link rel="stylesheet" type="text/css" href="assets/icons/spinner-icon-2.css"/&gt;
+          </code>
+         </pre>
+       </div>
+
+       <h4>Custom Animation Colors</h4>
+
+       <p>To add a custom color to the animation you can use the icon's css file which is located at <code class="highlight-rouge">assets/icons/block-icon.css</code> for example then you can replace the colors there with you custom colors.</p>
+
+       <div class="alert alert-info">
+  All pageload animations here are from <a href="https:www.loading.io" target="_blank">loading.io</a>
+</div>
+
+          </article>
+    </section>
+
+    <section class="main-section" id="backtotop">
+       <h3>Back To Top Button</h3>
+          <article>
+            <p>The Back To Top button allows the user to scroll to the top of the page easily without having to scroll all the way through.</p>
+            
+            
+
+
+            <h4>How to add the button</h4>
+            <p>By default this button is added to all of the homepages but if you want to add it to a page then you can use the following <code class="highlight-rouge">html</code> and place it below the <code class="highlight-rouge">body</code> tag.</p>
+
+
+            <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           <code class="language-html code">
+
+&lt;!-- Back to top button --&gt;
+&lt;a id="backtotop"&gt;&lt;/a&gt;
+          </code>
+         </pre>
+       </div>
+
+         <h4>Change Button Color</h4>
+
+         <p>For main homepage the Back To Top button css is present inside the main stylesheet at the very bottom of the stylesheet while for homepages its corresponding css is present inside their external stylesheets inside <code class="highlight-rouge">css</code> folders also at the very bottom of the stylesheet.</p>
+
+
+           <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           <code class="language-css code">
+
+#backtotop {
+  display: inline-block;
+  background-color: #28a745;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#backtotop::after {
+  content: "\f106";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+          </code>
+         </pre>
+       </div>
+
+<p>For other stylesheets you can just change the single line of code to change the color as:</p>
+
+<div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           <code class="language-css code">
+
+#backtotop {
+  background-color: #e94d65;
+}
+          </code>
+         </pre>
+       </div>
+          </article>
+    </section>
+
+
+
+
+    <section class="main-section" id="general">
+          <h3>CSS</h3>
+          <article>
+            <h4>General CSS</h4>
+
+           <p>Propertier Landing Page Template includes main stylesheet named <code class="highlight-rouge">style.css</code> which is the main styleseet of the theme.</p>
+
+
+          <h5>Fonts Import</h5>
+          <p>All the fonts used in Propertier Landing Page Template are imported at the top of the stylesheet with commented code for unused fonts. Inorder to replace the font style you can use the commented code of the font and replace it with main code.</p>
+
+       <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+       <pre>
+       <code class="language-css code">
+html,body,h1,h2,h3,h4,h5,h6,a,p{
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+font-family: 'Poppins', sans-serif !important;
+-webkit-font-smoothing: grayscale;
+-moz-osx-font-smoothing: grayscale;
+font-smoothing: grayscale;
+                }
+          </code>
+         </pre>
+       </div>
+
+          <h5>Font Weights</h5>
+          <p>Following are the classes used for font weights so can just add them to the element to apply font styling.</p>
+
+
+           <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           
+           <code class="language-css code">
+.fn {
+  font-weight: normal;
+}
+
+.f7 {
+  font-weight: 700;
+}
+
+.f8{
+  font-weight: 800;
+}
+
+.f9{
+  font-weight: 900;
+}
+          </code>
+         </pre>
+       </div>
+
+          <h5>Margins & Paddings</h5>
+           <p>Inside <code class="highlight-rouge">style.css</code> there is a section commented general css which consists general styling of the template as:</p>
+           <h6>Margins General Classes</h6>
+           <ul>
+            <li>m0 = <code class="highlight-rouge">margin:0;</code></li>
+            <li>mt0 = <code class="highlight-rouge">margin-top:0;</code></li>
+             <li>mb0 = <code class="highlight-rouge">margin-bottom:0;</code></li>
+             <li>mt1 = <code class="highlight-rouge">margin-top:1em;</code></li>
+             <li>mt2 = <code class="highlight-rouge">margin-top:2em;</code></li>
+             <li>mt3 = <code class="highlight-rouge">margin-top:3em;</code></li>
+             <li>mb1 = <code class="highlight-rouge">margin-bottom:1em;</code></li>
+             <li>mb2 = <code class="highlight-rouge">margin-bottom:2em;</code></li>
+             <li>mb3 = <code class="highlight-rouge">margin-bottom:3em;</code></li>
+             <li>mg = <code class="highlight-rouge">margin:1em;</code></li>
+             <li>mg3 = <code class="highlight-rouge">margin:3em 0;</code></li>
+
+           </ul>
+
+           <h6>Padding General Classes</h6>
+           <ul>
+            <li>p0 = <code class="highlight-rouge">padding:0;</code></li>
+            <li>pt0 = <code class="highlight-rouge">padding-top:0;</code></li>
+             <li>pb0 = <code class="highlight-rouge">padding-bottom:0;</code></li>
+             <li>pt1 = <code class="highlight-rouge">padding-top:1em;</code></li>
+             <li>pt2 = <code class="highlight-rouge">padding-top:2em;</code></li>
+             <li>pt3 = <code class="highlight-rouge">padding-top:3em;</code></li>
+             <li>pb1 = <code class="highlight-rouge">padding-bottom:1em;</code></li>
+             <li>pb2 = <code class="highlight-rouge">padding-bottom:2em;</code></li>
+             <li>pb3 = <code class="highlight-rouge">padding-bottom:3em;</code></li>
+             <li>p1 = <code class="highlight-rouge">padding:1em;</code></li>
+             <li>ppd = <code class="highlight-rouge">padding:1em 0;</code></li>
+              <li>p3 = <code class="highlight-rouge">padding:3em 0;</code></li>
+
+           </ul>
+
+          
+
+
+          </article>
+    </section>
+
+
+
+
+    <section class="main-section" id="backgrounds">
+       <h3>Backgrounds</h3>
+          <article>
+            
+            <h4>Homepage Slider Background</h4>
+          <p>The homepage slider background uses <code class="highlight-rouge">bg-cs</code> class which is used at the top of <code class="highlight-rouge">&lt;header&gt;</code> tag </p>
+
+          <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           
+           <code class="language-html code">
+&lt;!-- Background Container Starts --&gt;
+&lt;div class="bg-cs"&gt;
+          </code>
+         </pre>
+       </div>
+
+       <p>All external stylesheets included uses the same class to override the top banner background of main stylesheet.</p>
+
+       <p>If you want to change the top banner background on any specific homepage, you can simply change it inside the external stylesheet of the page rather than changing the main background class.</p>
+
+
+
+       <h4>Slider Background</h4>
+       <p>To change the background of the main slide you can use <code class="highlight-rouge">cs_slider, cs_slider_2 & cs_slider_3</code> classes which contains backgrounds for the main banner slider. </p>
+          </article>
+
+          <p>Inside <code class="highlight-rouge">style.css</code> these three classes are present although you can change the slider backgrounds from <code class="highlight-rouge">style.css</code> or you can override these classes inside external stylesheets as <code class="highlight-rouge">style-override.css</code> where they are commented at the bottom of the stylesheet. You can uncomment them to apply custom backgrounds.</p>
+
+         <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           
+           <code class="language-css code">
+/*.cs_slider {
+    height: 100%;
+    background-image: url(assets/images/slider-images/slider_img_1.jpg);
+    background-size: cover;
+}
+
+.cs_slider_2 {
+    height: 100%;
+    background-image: url(assets/images/slider-images/slider_img_4.jpg);
+    background-size: cover;
+}
+
+.cs_slider_3 {
+    height: 100%;
+    background-image: url(assets/images/slider-images/slider_img_3.jpg);
+    background-size: cover;
+}*/
+          </code>
+         </pre>
+       </div>
+
+    </section>
+
+
+    <section class="main-section" id="navbars">
+
+    <h3>Navbars</h3>
+       
+          <article>
+            <p>Propertier Landing Page Template contains two navbars styles which are <code class="highlight-rouge">plain</code> and <code class="highlight-rouge">transparent</code>. Among 6 homepages both plain and transparent navbars are used.</p>
+
+            <h4>Transparent Navbar</h4>
+
+            <p>By default <code class="highlight-rouge">plain</code> navbar is activated but you can easily switch to transparent navbar.</p>
+
+            <div class="alert alert-info">
+             <strong>Note!</strong> Inorder to use transparent navbar you must use a homepage that contains transparent navbar eg: <code class="highlight-rouge">index-2.html</code>
+             </div>
+
+            
+             <h4>Remove Transparent</h4>
+             <p>To remove the transparency of the navbar you can simply add a class <code class="highlight-rouge">bgp</code> to the <code class="highlight-rouge">&lt;header&gt;</code> and <code class="highlight-rouge">&lt;nav&gt;</code> element of the page which will make the navbar <code class="highlight-rouge">plain</code>.</p>
+
+             <h4>Sticky Navbar</h4>
+             <p>By default all navbars in Propertier Landing Page Template are sticky but if you don't want a sticky navbar you can simple remove it by adding a class <code class="highlight-rouge">non-sticky</code> to the <code class="highlight-rouge">&lt;nav&gt;</code> element.</p>
+
+
+            <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+           <pre>
+           
+           <code class="language-html code">
+&lt;nav class="navbar navbar-expand-lg navbar-light cs-nav non-sticky" id="navbar"&gt;
+
+...
+
+&lt;/nav&gt;
+          </code>
+         </pre>
+       </div>
+
+            
+          </article>
+    </section>
+
+
+  
+    <section class="main-section" id="Javascript">
+    <header><h3>Javascript</h3></header>
+
+    
+           <section class="inner-section" id="sliders">
+           <header><h4>Sliders</h4></header>
+<article>
+
+          <p>Propertier Landing Page Template uses slick slider where which is inside <code class="highlight-rouge">assets</code> folder.</p>
+          
+          <h6>Initializing Sliders</h6>
+
+          <p class="ppd">To initialize slider you must include <code class="highlight-rouge">slick-init.js</code> files at the head section of your theme</p>
+          <p>Inside <code class="highlight-rouge">slick-init.js</code> different sliders are included you can use the classname of the slider to include it in html page.</p>
+
+          <ul>
+            <li>Main slider is class named <code class="highlight-rouge">.slider-main</code></li>
+            <li>Reviews slider is class named <code class="highlight-rouge">.slider-rw</code></li>
+            <li>Reviews Full Width slider is class named <code class="highlight-rouge">.slider-rwf</code></li>
+            <li>Clients slider is class named <code class="highlight-rouge">.slider-cs</code></li>
+            <li>Thumnail slider is class named <code class="highlight-rouge">.slider-for</code> where its nested thumnail navigation slider is named <code class="highlight-rouge">.slider-nav</code>.</li>
+          </ul>
+
+      
+          <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>   
+          <pre>
+
+              <code class="language-html code">
+&lt;div class="slider slider-main"&gt;
+
+&lt;div class="slider-1"&gt;
+// Slider Content Here
+&lt;/div&gt;
+
+&lt;div class="slider-2"&gt;
+                 // Slider Content Here
+&lt;/div&gt;
+
+&lt;div class="slider-3"&gt;
+// Slider Content Here
+&lt;/div&gt;
+
+&lt;/div&gt;
+            </code>
+         </pre>
+       </div>
+            
+
+</article>
+</section>  
+          
+  <section class="inner-section" id="progress">
+        <header><h4>Progress Bars</h4></header>
+          <article>
+    
+       <p>To initialize progress bar you can add the progress bar script at the bottom of html page before closing tag of <code class="highlight-rouge">body</code>.</p>
+
+      <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+       <pre>
+
+              <code class="language-html code">
+&lt;script src="js/progress.js"&gt;&lt;/script&gt;
+            </code>
+         </pre>
+       </div>
+
+
+
+         <p>Below is the code to add a progress bar to your html page</p>
+
+         <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+         <pre>
+
+           <code class="language-html code">
+&lt;div class="row"&gt;
+
+&lt;h5 class="bars">Happy Clients&lt;/h5&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar-h" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50&lt;/div&gt;
+&lt;/div>
+&lt;h5 class="bars">International Projects&lt;/h5&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar-h" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75&lt;/div&gt;
+&lt;/div&gt;
+&lt;h5 class="bars">New Clients</h5>
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar-h" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90&lt;/div&gt;
+  &lt;/div&gt;
+    &lt;h5 class="bars">Our Project Success Rate&lt;/h5>
+  &lt;div class="progress"&gt;
+    &lt;div class="progress-bar-h" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="      100">100&lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div>
+          </code>
+         </pre>
+       </div>
+    
+          </article>
+   </section>     
+   
+
+
+
+<section class="inner-section" id="counters">
+        <header><h4>Counters</h4></header>
+          <article>
+          
+          <p>To initialize counter you need to add two progress bar scripts at the bottom of html page before closing tag of <code class="highlight-rouge">body</code>.</p>
+
+          <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+          <pre>
+    
+              <code class="language-html code">
+&lt;script src="js/counter.js"&gt;&lt;/script&gt;
+            </code>
+         </pre>
+       </div>
+
+         <p>Below is the code to add a counter to your html page</p>
+
+        <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+         <pre>
+      
+           <code class="language-html code">
+&lt;!-- Counter Section Starts --&gt;
+&lt;div id="counter"&gt;
+&lt;div class="row counter_row bg-cs"&gt;
+
+
+  &lt;div class="col-md-3 text-center"&gt;
+    &lt;h6 class="h6-counter">Cases Completed&lt;/h6&gt;
+    &lt;i class="fa fa-business-time fa-5x cgg"&gt;&lt;/i&gt;
+    &lt;div class="counter-value" data-count="300"&gt;0&lt;/div&gt;
+  &lt;/div&gt;
+
+
+  &lt;div class="col-md-3 text-center"&gt;
+    &lt;h6 class="h6-counter">Consultants Wordwide&lt;/h6&gt;
+    &lt;i class="fa fa-globe fa-5x cgg"&gt;&lt;/i&gt;
+    &lt;div class="counter-value" data-count="400"&gt;100&lt;/div&gt;
+  &lt;/div&gt;
+
+
+  &lt;div class="col-md-3 text-center"&gt;
+    &lt;h6 class="h6-counter"&gt;Projects Delivered&lt;/h6&gt;
+    &lt;i class="fa fa-chart-bar fa-5x cgg"&gt;&lt;/i&gt;
+    &lt;div class="counter-value" data-count="1500"&gt;200&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="col-md-3 text-center"&gt;
+    &lt;h6 class="h6-counter"&gt;Satisfied Clients&lt;/h6&gt;
+    &lt;i class="fa fa-check-circle fa-5x cgg"&gt;&lt;/i&gt;
+    &lt;div class="counter_percent"&gt;&lt;span class="counter-value" data-count="100"&gt;0&lt;/span&gt;&lt;span class="counter-percent"&gt;%&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Counter Section Ends --&gt;
+          </code>
+         </pre>
+       </div>
+    
+    </article>
+</section>
+
+ 
+
+
+
+<section class="inner-section" id="googlemaps">
+        <header><h3>Google Maps</h3></header>
+          <article>
+          
+          <p>Google maps are used for all homepages and contact pages for easy location sharing.</p>
+
+          <p>Propertier Landing Page Template uses iframe for google map integration where use can use the following code to integrate google map and add a location to <code class="highlight-rouge">src</code> attribute to load your current map.</p>
+
+          <div class="code-div"> 
+           <div class="tooltip">
+          <button class="copy">Copy</button>
+           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+           </div>
+         <pre>
+      
+           <code class="language-html code">
+            
+&lt;iframe src="" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"&gt;&lt;/iframe&gt;
+          </code>
+         </pre>
+       </div>
+
+      
+
+          <h4>Map Attributes</h4>
+          <p>The iframe code above uses some attributes which you can use to customize the map which are.</p>
+          <ul>
+            <li><code class="highlight-rouge">width</code> for custom width as <code class="highlight-rouge">width="600"</code> or for full width use can use <code class="highlight-rouge">width="100%"</code></li>
+            <li><code class="highlight-rouge">Height</code> for height as <code class="highlight-rouge">height="450"</code></li>
+            <li><code class="highlight-rouge">allowfullscreen</code> to enable full screen and other attributes which you can leave as default.</li>
+          </ul>
+
+          <h4>Add Map Location</h4>
+          <p>Inorder to add a location to the map you can visit <a href="https://www.google.com/maps">https://www.google.com/maps</a> and click on the location from the map which will bring a map marker to that location then at the top left corner you can click the share button which will open a modal window then click on embed map and code the iframe code and paste it on the page where you want to add the map.</p>
+
+       <div class="alert alert-info">
+  <strong>Note!</strong> For map zoom you can use zoom the map on <code class="highlight-rouge">google maps</code> then embed it using the same process which will embed the zoomed version of the map.
+</div>
+    
+    </article>
+</section>  
+
+
+
+
+
+
+
+ 
+  </section>
+
+
+     
+    
+
+
+
+    
+    </main>
+      
+    <hr>
+
+<!-- Btm Container starts -->
+<div class="btm_container">
+<div class="container">
+
+
+
+<div class="text-center cright"><p>&copy; Copyrights. All Rights Reserved</p></div>
+
+</div>
+</div>
+<!-- Btm container ends -->
+    
+  </div>
+ </div>
+</div>
+    
+
+
+
+
+
+<!-- Prism JS  -->
+<script src="libs/prism/prism.js"></script>
+<!-- Clipboard JS -->
+<script src="libs/clipboard/dist/clipboard.min.js"></script>
+
+<!-- 3. Instantiate clipboard -->
+    
+    <script>
+    var tooltip = document.getElementById("myTooltip");
+    var clipboard = new ClipboardJS('.tooltip', {
+        target: function(trigger) {
+             return trigger.nextElementSibling;
+           
+        }
+    });
+
+    clipboard.on('success', function(e) {
+   e.clearSelection();
+   $(e.trigger).closest(".code-div").find(".tooltiptext").text('Copied!');
+
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+
+    $(".copy").mouseout(function(){
+                $(this).closest(".code-div").find(".tooltiptext").text('Copy to clipboard');
+            })
+    </script>
+
+
+    <script>
+      
+
+    $(document).ready(function(){
+
+     
+
+    $(".content").click(function(){
+    $(this).next(".inner-menu").slideToggle();
+    $(this).children(".c_icon").toggleClass("c_rotate");
+  });
+
+
+    });
+
+
+
+    </script>
+</body>
+ </html>
